@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What is Winter Arc? The Complete Guide"
-date: 2026-08-19
+date: 2026-08-18
 ---
 
 Winter Arc is a discipline challenge — a stretch of weeks where you commit to daily habits that build strength, focus, and momentum before the new year hits.
