@@ -4,3 +4,6 @@ description: Fitness, discipline & gear for your Winter Arc journey
 header_pages:
   - about.md
 logo: /logo_square.jpg
+header_pages:
+  - about.md
+  - disclosure.md
