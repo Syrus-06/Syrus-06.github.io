@@ -28,7 +28,12 @@
 }
 
 input.nav-trigger {
-  display: none !important;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
 }
 
 label[for="nav-trigger"] {
