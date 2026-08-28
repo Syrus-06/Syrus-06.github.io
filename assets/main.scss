@@ -16,28 +16,24 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .trigger {
-  display: flex;
-  gap: 20px;
+  display: flex !important;
+  gap: 16px;
 }
 
 .page-link {
   color: #ffffff !important;
 }
 
-input.nav-trigger {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-}
-
-}
-
 label[for="nav-trigger"] {
-  display: none;
+  display: none !important;
+}
+
+input.nav-trigger {
+  display: none !important;
 }
 
 .site-footer {
@@ -46,25 +42,15 @@ label[for="nav-trigger"] {
 }
 
 @media screen and (max-width: 600px) {
-  .site-header .wrapper {
-    flex-wrap: wrap;
-  }
-
-  label[for="nav-trigger"] {
-    display: block;
-    cursor: pointer;
-    color: #ffffff;
+  .site-title {
+    font-size: 20px;
   }
 
   .trigger {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #000000;
-    padding: 10px 0;
+    gap: 10px;
   }
 
-  input.nav-trigger:checked ~ .trigger {
-    display: flex;
+  .page-link {
+    font-size: 14px;
   }
 }
