@@ -6,31 +6,34 @@
 .site-header {
   background-color: #000000;
   border-top: none;
+  position: relative;
 }
 
 .header-grid {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  position: relative;
+  height: 50px;
 }
 
 .header-left {
-  flex: 1;
   position: relative;
+  z-index: 2;
 }
 
 .header-center {
-  flex: 2;
-  text-align: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   color: #ffffff !important;
   white-space: nowrap;
 }
 
 .header-right {
-  flex: 1;
+  margin-left: auto;
   display: flex;
-  justify-content: flex-end;
   gap: 16px;
+  z-index: 2;
 }
 
 .page-link {
@@ -54,20 +57,38 @@ label[for="nav-trigger"] svg path {
   fill: #ffffff;
 }
 
-.trigger {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+.side-drawer {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100%;
   background-color: #000000;
+  padding: 70px 20px;
+  display: flex;
   flex-direction: column;
-  padding: 10px 20px;
-  min-width: 170px;
-  z-index: 10;
+  gap: 20px;
+  transition: left 0.3s ease;
+  z-index: 100;
 }
 
-input.nav-trigger:checked ~ .trigger {
-  display: flex;
+.drawer-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+input.nav-trigger:checked ~ .drawer-overlay {
+  display: block;
+}
+
+input.nav-trigger:checked ~ .side-drawer {
+  left: 0;
 }
 
 .site-footer {
