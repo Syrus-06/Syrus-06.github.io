@@ -8,21 +8,29 @@
   border-top: none;
 }
 
-.site-title, .site-title:visited {
-  color: #ffffff !important;
-}
-
-.site-header .wrapper {
+.header-grid {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.top-links {
-  display: flex;
-  align-items: center;
-  gap: 16px;
+.header-left {
+  flex: 1;
   position: relative;
+}
+
+.header-center {
+  flex: 2;
+  text-align: center;
+  color: #ffffff !important;
+  white-space: nowrap;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
 }
 
 .page-link {
@@ -50,7 +58,7 @@ label[for="nav-trigger"] svg path {
   display: none;
   position: absolute;
   top: 100%;
-  right: 0;
+  left: 0;
   background-color: #000000;
   flex-direction: column;
   padding: 10px 20px;
@@ -66,33 +74,17 @@ input.nav-trigger:checked ~ .trigger {
   background-color: #000000;
   color: #ffffff;
 }
-.site-title {
-  white-space: nowrap;
-}
 
 @media screen and (max-width: 600px) {
-  .site-title {
-    font-size: 18px;
+  .header-center {
+    font-size: 16px;
   }
 
-  .top-links {
+  .header-right {
     gap: 8px;
   }
 
-  .page-link {
-    font-size: 13px;
-  }
-}
-@media screen and (max-width: 600px) {
-  .site-title {
-    font-size: 18px;
-  }
-
-  .top-links > .page-link {
-    display: none;
-  }
-
-  .trigger .page-link {
-    display: block;
+  .header-right .page-link {
+    font-size: 12px;
   }
 }
