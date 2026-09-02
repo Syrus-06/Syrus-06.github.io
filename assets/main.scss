@@ -66,3 +66,20 @@ input.nav-trigger:checked ~ .trigger {
   background-color: #000000;
   color: #ffffff;
 }
+.site-title {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 600px) {
+  .site-title {
+    font-size: 18px;
+  }
+
+  .top-links {
+    gap: 8px;
+  }
+
+  .page-link {
+    font-size: 13px;
+  }
+}
