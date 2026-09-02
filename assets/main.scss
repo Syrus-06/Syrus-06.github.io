@@ -6,7 +6,6 @@
 .site-header {
   background-color: #000000;
   border-top: none;
-  position: relative;
 }
 
 .header-grid {
@@ -57,38 +56,20 @@ label[for="nav-trigger"] svg path {
   fill: #ffffff;
 }
 
-.side-drawer {
-  position: fixed;
-  top: 0;
-  left: -260px;
-  width: 240px;
-  height: 100%;
-  background-color: #000000;
-  padding: 70px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  transition: left 0.3s ease;
-  z-index: 100;
-}
-
-.drawer-overlay {
+.trigger {
   display: none;
-  position: fixed;
-  top: 0;
+  position: absolute;
+  top: 100%;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  background-color: #000000;
+  flex-direction: column;
+  padding: 10px 20px;
+  min-width: 170px;
+  z-index: 10;
 }
 
-input.nav-trigger:checked ~ .drawer-overlay {
-  display: block;
-}
-
-input.nav-trigger:checked ~ .side-drawer {
-  left: 0;
+input.nav-trigger:checked ~ .trigger {
+  display: flex;
 }
 
 .site-footer {
