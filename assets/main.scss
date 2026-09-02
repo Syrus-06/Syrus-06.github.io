@@ -8,68 +8,32 @@
   border-top: none;
 }
 
-.header-grid {
+.site-title, .site-title:visited {
+  color: #ffffff !important;
+}
+
+.site-header .wrapper {
   display: flex;
   align-items: center;
-  position: relative;
-  height: 50px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.header-left {
-  position: relative;
-  z-index: 2;
-}
-
-.header-center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #ffffff !important;
-  white-space: nowrap;
-}
-
-.header-right {
-  margin-left: auto;
-  display: flex;
+.trigger {
+  display: flex !important;
   gap: 16px;
-  z-index: 2;
 }
 
 .page-link {
   color: #ffffff !important;
 }
 
-input.nav-trigger {
-  position: absolute;
-  opacity: 0;
-  width: 1px;
-  height: 1px;
-}
-
 label[for="nav-trigger"] {
-  display: block;
-  cursor: pointer;
-  margin: 0;
+  display: none !important;
 }
 
-label[for="nav-trigger"] svg path {
-  fill: #ffffff;
-}
-
-.trigger {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #000000;
-  flex-direction: column;
-  padding: 10px 20px;
-  min-width: 170px;
-  z-index: 10;
-}
-
-input.nav-trigger:checked ~ .trigger {
-  display: flex;
+input.nav-trigger {
+  display: none !important;
 }
 
 .site-footer {
@@ -78,15 +42,15 @@ input.nav-trigger:checked ~ .trigger {
 }
 
 @media screen and (max-width: 600px) {
-  .header-center {
-    font-size: 16px;
+  .site-title {
+    font-size: 20px;
   }
 
-  .header-right {
-    gap: 8px;
+  .trigger {
+    gap: 10px;
   }
 
-  .header-right .page-link {
-    font-size: 12px;
+  .page-link {
+    font-size: 14px;
   }
 }
