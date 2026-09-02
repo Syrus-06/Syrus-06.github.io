@@ -83,3 +83,16 @@ input.nav-trigger:checked ~ .trigger {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 600px) {
+  .site-title {
+    font-size: 18px;
+  }
+
+  .top-links > .page-link {
+    display: none;
+  }
+
+  .trigger .page-link {
+    display: block;
+  }
+}
