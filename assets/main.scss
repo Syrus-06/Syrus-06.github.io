@@ -16,41 +16,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
-.trigger {
-  display: flex !important;
+.top-links {
+  display: flex;
+  align-items: center;
   gap: 16px;
+  position: relative;
 }
 
 .page-link {
   color: #ffffff !important;
 }
 
-label[for="nav-trigger"] {
-  display: none !important;
+input.nav-trigger {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
 }
 
-input.nav-trigger {
-  display: none !important;
+label[for="nav-trigger"] {
+  display: block;
+  cursor: pointer;
+  margin: 0;
+}
+
+label[for="nav-trigger"] svg path {
+  fill: #ffffff;
+}
+
+.trigger {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #000000;
+  flex-direction: column;
+  padding: 10px 20px;
+  min-width: 170px;
+  z-index: 10;
+}
+
+input.nav-trigger:checked ~ .trigger {
+  display: flex;
 }
 
 .site-footer {
   background-color: #000000;
   color: #ffffff;
-}
-
-@media screen and (max-width: 600px) {
-  .site-title {
-    font-size: 20px;
-  }
-
-  .trigger {
-    gap: 10px;
-  }
-
-  .page-link {
-    font-size: 14px;
-  }
 }
