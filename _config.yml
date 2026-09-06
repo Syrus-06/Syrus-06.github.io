@@ -1,9 +1,7 @@
 theme: minima
 title: Winter Arc Hub
 description: Fitness, discipline & gear for your Winter Arc journey
-header_pages:
-  - about.md
-logo: /logo_square.jpg
+logo: /assets/mark.svg
 header_pages:
   - about.md
   - disclosure.md
