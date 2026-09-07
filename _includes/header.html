@@ -1,22 +1,61 @@
-<header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-      <img src="{{ "/logo_square.jpg" | relative_url }}" alt="Winter Arc Hub" style="height: 40px; vertical-align: middle;">
-      Winter Arc Hub
-    </a>
+<header class="site-header wah-header" role="banner">
+  <input type="checkbox" id="wah-nav-toggle" class="wah-nav-toggle" />
 
-    <input type="checkbox" class="nav-trigger" id="nav-trigger" />
-    <label for="nav-trigger">
-      <span class="menu-icon">
-        <svg viewBox="0 0 18 15" width="18px" height="15px">
-          <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
+  <div class="wah-bar">
+    <label for="wah-nav-toggle" class="wah-burger" id="wah-burger" aria-controls="wah-drawer" aria-expanded="false">
+      <span class="wah-burger-icon" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
       </span>
+      <span class="visually-hidden">Open shop menu</span>
     </label>
 
-    <div class="trigger">
-      <a href="{{ "/about/" | relative_url }}" class="page-link">About</a>
-      <a href="{{ "/disclosure/" | relative_url }}" class="page-link">Disclosure</a>
-    </div>
+    <a class="wah-brand" rel="author" href="{{ "/" | relative_url }}" aria-label="Winter Arc Hub home">
+      <span class="wah-logo-wrap" aria-hidden="true">
+        <img
+          class="wah-logo"
+          src="{{ "/logo_square.jpg" | relative_url }}"
+          alt=""
+          width="120"
+          height="120"
+        />
+      </span>
+      <span class="wah-title">Winter Arc Hub</span>
+    </a>
+
+    <nav class="wah-pages" aria-label="Site">
+      <a class="wah-page{% if page.url == '/about/' %} is-active{% endif %}" href="{{ "/about/" | relative_url }}">About</a>
+      <a class="wah-page{% if page.url == '/disclosure/' %} is-active{% endif %}" href="{{ "/disclosure/" | relative_url }}">Disclosure</a>
+    </nav>
   </div>
+
+  <label for="wah-nav-toggle" class="wah-overlay" aria-hidden="true"></label>
+
+  <aside class="wah-drawer" id="wah-drawer" aria-label="Shop menu">
+    <div class="wah-drawer-head">
+      <p class="wah-drawer-kicker">Winter Arc</p>
+      <p class="wah-drawer-heading">Shop</p>
+      <label for="wah-nav-toggle" class="wah-close">
+        <span aria-hidden="true">&times;</span>
+        <span class="visually-hidden">Close shop menu</span>
+      </label>
+    </div>
+
+    <nav class="wah-shop" aria-label="Product categories">
+      {% for category in site.data.shop %}
+        <details class="wah-cat">
+          <summary class="wah-cat-summary">
+            <span>{{ category.title }}</span>
+            <span class="wah-caret" aria-hidden="true"></span>
+          </summary>
+          <div class="wah-cat-items">
+            {% for item in category.items %}
+              <a class="wah-cat-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endfor %}
+          </div>
+        </details>
+      {% endfor %}
+    </nav>
+  </aside>
 </header>
