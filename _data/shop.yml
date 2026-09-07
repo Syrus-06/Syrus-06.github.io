@@ -1,0 +1,40 @@
+- title: Apparel
+  url: /shop/apparel/
+  items:
+    - title: Tees
+      url: /shop/apparel/tees/
+    - title: Compression
+      url: /shop/apparel/compression/
+    - title: Trackpants
+      url: /shop/apparel/trackpants/
+    - title: Shorts
+      url: /shop/apparel/shorts/
+- title: Footwear
+  url: /shop/footwear/
+  items:
+    - title: Shoes
+      url: /shop/footwear/shoes/
+    - title: Socks
+      url: /shop/footwear/socks/
+- title: Gym Essentials
+  url: /shop/gym-essentials/
+  items:
+    - title: Bands
+      url: /shop/gym-essentials/bands/
+    - title: Grippers
+      url: /shop/gym-essentials/grippers/
+    - title: Bottles
+      url: /shop/gym-essentials/bottles/
+    - title: Other gym essentials
+      url: /shop/gym-essentials/more/
+- title: Supplements
+  url: /shop/supplements/
+  items:
+    - title: Creatine
+      url: /shop/supplements/creatine/
+    - title: Protein
+      url: /shop/supplements/protein/
+    - title: Pre-workout
+      url: /shop/supplements/pre-workout/
+    - title: Other supplements
+      url: /shop/supplements/more/
