@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <title>Winter Arc Hub</title>
+  <!-- Winter arc spanning the two peaks of W -->
+  <path
+    d="M20 20 A12 12 0 0 1 44 20"
+    stroke="currentColor"
+    stroke-width="3.6"
+    stroke-linecap="round"
+  />
+  <!-- Athletic W: two peaks, one valley — winter range + the letters W/A -->
+  <path
+    d="M8 52 L22 16 L32 42 L42 16 L56 52"
+    stroke="currentColor"
+    stroke-width="3.6"
+    stroke-linejoin="miter"
+    stroke-miterlimit="2.4"
+    stroke-linecap="butt"
+  />
+</svg>

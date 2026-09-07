@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 80" fill="none" role="img" aria-label="Winter Arc Hub">
+  <g transform="translate(0 8)" fill="none">
+    <path d="M20 20 A12 12 0 0 1 44 20" stroke="#F5F5F5" stroke-width="3.6" stroke-linecap="round"/>
+    <path d="M8 52 L22 16 L32 42 L42 16 L56 52" stroke="#F5F5F5" stroke-width="3.6" stroke-linejoin="miter" stroke-miterlimit="2.4"/>
+  </g>
+  <text x="84" y="52" fill="#F5F5F5" font-family="Oswald, Arial Narrow, Helvetica Neue, sans-serif" font-size="28" font-weight="600" letter-spacing="6.4">WINTER ARC HUB</text>
+</svg>

@@ -131,25 +131,20 @@ body.wah-lock {
   text-decoration: none !important;
 }
 
-.wah-logo-wrap {
+.wah-mark {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  overflow: hidden;
+  width: 34px;
+  height: 34px;
   flex-shrink: 0;
-  background: var(--wah-black);
+  color: var(--wah-white);
 }
 
-.wah-logo {
+.wah-mark-svg {
   display: block;
-  width: 92px;
-  height: 92px;
-  max-width: none;
-  object-fit: cover;
-  object-position: center 22%;
-  transform: translateY(-4px);
+  width: 100%;
+  height: 100%;
 }
 
 .wah-title {
@@ -381,14 +376,9 @@ body.wah-lock {
     letter-spacing: 0.1em;
   }
 
-  .wah-logo-wrap {
+  .wah-mark {
     width: 30px;
     height: 30px;
-  }
-
-  .wah-logo {
-    width: 78px;
-    height: 78px;
   }
 }
 
