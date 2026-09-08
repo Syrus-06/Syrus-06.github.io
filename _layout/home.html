@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<div class="wrapper">
+
+  <div class="hero">
+    <p class="eyebrow">THE WINTER ARC</p>
+    <h1 class="hero-headline">BUILD DISCIPLINE.<br>BECOME HARDER TO STOP.</h1>
+    <p class="hero-desc">Training, gear, mindset, and accountability for your Winter Arc.</p>
+    <a href="#latest-posts" class="hero-link">EXPLORE THE JOURNEY →</a>
+  </div>
+
+  <nav class="category-nav">
+    <a href="{{ "/category/apparel/" | relative_url }}">TRAINING</a>
+    <a href="{{ "/category/footwear/" | relative_url }}">GEAR</a>
+    <a href="{{ "/category/gym-essentials/" | relative_url }}">MINDSET</a>
+    <a href="{{ "/category/supplements/" | relative_url }}">ROUTINES</a>
+  </nav>
+
+  {% assign featured = site.posts.first %}
+  {% if featured %}
+  <section class="featured-article">
+    <p class="section-label">FEATURED</p>
+    <h2 class="featured-title"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
+    <p class="featured-excerpt">{{ featured.excerpt | strip_html | truncatewords: 28 }}</p>
+    <a href="{{ featured.url | relative_url }}" class="read-link">READ ARTICLE →</a>
+  </section>
+  {% endif %}
+
+  <section class="latest-posts" id="latest-posts">
+    <p class="section-label">LATEST</p>
+    {% for post in site.posts offset: 1 %}
+    <div class="post-row">
+      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+      <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+      <a href="{{ post.url | relative_url }}" class="post-arrow">→</a>
+    </div>
+    {% endfor %}
+  </section>
+
+</div>
