@@ -135,21 +135,19 @@ body.wah-lock {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 48px;
+  height: 48px;
   overflow: hidden;
   flex-shrink: 0;
-  background: var(--wah-black);
+  background: transparent;
 }
 
 .wah-logo {
   display: block;
-  width: 92px;
-  height: 92px;
+  width: 48px;
+  height: 48px;
   max-width: none;
-  object-fit: cover;
-  object-position: center 22%;
-  transform: translateY(-4px);
+  object-fit: contain;
 }
 
 .wah-title {
@@ -382,13 +380,13 @@ body.wah-lock {
   }
 
   .wah-logo-wrap {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
   }
 
   .wah-logo {
-    width: 78px;
-    height: 78px;
+    width: 40px;
+    height: 40px;
   }
 }
 
