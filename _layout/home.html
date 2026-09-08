@@ -1,41 +1,70 @@
 ---
 layout: default
 ---
-<div class="wrapper">
-
-  <div class="hero">
+<div class="hero-section">
+  <div class="hero-left">
     <p class="eyebrow">THE WINTER ARC</p>
-    <h1 class="hero-headline">BUILD DISCIPLINE.<br>BECOME HARDER TO STOP.</h1>
-    <p class="hero-desc">Training, gear, mindset, and accountability for your Winter Arc.</p>
-    <a href="#latest-posts" class="hero-link">EXPLORE THE JOURNEY →</a>
+    <h1 class="hero-headline">DISCIPLINE<br>DOESN'T HIBERNATE.</h1>
+    <p class="hero-desc">Train through the cold.<br>Build strength. Build discipline. Build yourself.</p>
+    <a href="#journal" class="hero-link">EXPLORE THE WINTER ARC →</a>
   </div>
-
-  <nav class="category-nav">
-    <a href="{{ "/category/apparel/" | relative_url }}">TRAINING</a>
-    <a href="{{ "/category/footwear/" | relative_url }}">GEAR</a>
-    <a href="{{ "/category/gym-essentials/" | relative_url }}">MINDSET</a>
-    <a href="{{ "/category/supplements/" | relative_url }}">ROUTINES</a>
-  </nav>
-
-  {% assign featured = site.posts.first %}
-  {% if featured %}
-  <section class="featured-article">
-    <p class="section-label">FEATURED</p>
-    <h2 class="featured-title"><a href="{{ featured.url | relative_url }}">{{ featured.title }}</a></h2>
-    <p class="featured-excerpt">{{ featured.excerpt | strip_html | truncatewords: 28 }}</p>
-    <a href="{{ featured.url | relative_url }}" class="read-link">READ ARTICLE →</a>
-  </section>
-  {% endif %}
-
-  <section class="latest-posts" id="latest-posts">
-    <p class="section-label">LATEST</p>
-    {% for post in site.posts offset: 1 %}
-    <div class="post-row">
-      <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
-      <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
-      <a href="{{ post.url | relative_url }}" class="post-arrow">→</a>
-    </div>
-    {% endfor %}
-  </section>
-
+  <div class="hero-right">
+    <div class="img-placeholder tall"></div>
+  </div>
 </div>
+
+<section class="philosophy">
+  <p class="section-label">WINTER ARC</p>
+  <h2 class="philosophy-heading">THE WORLD SLOWS DOWN.<br>YOU DON'T.</h2>
+  <p class="philosophy-text">Winter Arc is about using the coldest months to build something most people put off until spring — real discipline, consistent training, and a mindset that doesn't bend when it's inconvenient.</p>
+  <div class="philosophy-links">
+    <a href="{{ "/category/apparel/" | relative_url }}">TRAINING</a>
+    <a href="{{ "/category/gym-essentials/" | relative_url }}">MINDSET</a>
+    <a href="{{ "/category/footwear/" | relative_url }}">GEAR</a>
+  </div>
+</section>
+
+<section class="full-image-section">
+  <div class="img-placeholder wide"></div>
+  <div class="image-overlay-text">
+    <h3>WINTER ISN'T<br>AN EXCUSE.</h3>
+    <a href="{{ "/category/apparel/" | relative_url }}">TRAIN →</a>
+  </div>
+</section>
+
+<section class="journal" id="journal">
+  <p class="section-label">THE JOURNAL</p>
+  <h2 class="journal-heading">LATEST FROM WINTER ARC</h2>
+  {% for post in site.posts %}
+  <div class="post-row">
+    <span class="post-date">{{ post.date | date: "%b %d, %Y" }}</span>
+    <a href="{{ post.url | relative_url }}" class="post-title">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}" class="post-arrow">→</a>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="winter-kit">
+  <p class="section-label">THE WINTER KIT</p>
+  <h2 class="kit-heading">Gear built for the cold.</h2>
+  <div class="kit-grid">
+    <div class="kit-item">
+      <div class="img-placeholder square"></div>
+      <p class="kit-name">Training Shoes</p>
+    </div>
+    <div class="kit-item">
+      <div class="img-placeholder square"></div>
+      <p class="kit-name">Cold-Weather Gloves</p>
+    </div>
+    <div class="kit-item">
+      <div class="img-placeholder square"></div>
+      <p class="kit-name">Training Jacket</p>
+    </div>
+  </div>
+</section>
+
+<section class="final-statement">
+  <h2>BUILD YOUR<br>WINTER ARC.</h2>
+  <p>Training. Discipline. Gear. Mindset.</p>
+  <a href="{{ "/about/" | relative_url }}" class="cta-link">START HERE →</a>
+</section>
