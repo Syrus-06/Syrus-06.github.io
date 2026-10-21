@@ -28,6 +28,13 @@
       <a class="wah-page{% if page.url == '/about/' %} is-active{% endif %}" href="{{ "/about/" | relative_url }}">About</a>
       <a class="wah-page{% if page.url == '/disclosure/' %} is-active{% endif %}" href="{{ "/disclosure/" | relative_url }}">Disclosure</a>
     </nav>
+    <button class="wah-search-btn" id="wah-search-btn" type="button" aria-label="Search" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.5" />
+        <path d="M16 16 L21 21" />
+      </svg>
+      <span class="visually-hidden">Search</span>
+    </button>
   </div>
 
   <label for="wah-nav-toggle" class="wah-overlay" aria-hidden="true"></label>
@@ -58,4 +65,21 @@
       {% endfor %}
     </nav>
   </aside>
+
+  <div class="wah-search-overlay" id="wah-search-overlay" hidden>
+    <div class="wah-search-panel" role="dialog" aria-modal="true" aria-label="Search">
+      <div class="wah-search-row">
+        <svg class="wah-search-glyph" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.5" />
+          <path d="M16 16 L21 21" />
+        </svg>
+        <input class="wah-search-input" id="wah-search-input" type="search" placeholder="Search the Arc&hellip;" autocomplete="off" spellcheck="false" />
+        <button class="wah-search-close" id="wah-search-close" type="button" aria-label="Close search">&times;</button>
+      </div>
+      <p class="wah-search-kicker">Pages &amp; shop categories</p>
+      <ul class="wah-search-results" id="wah-search-results"></ul>
+      <p class="wah-search-empty" id="wah-search-empty" hidden>Nothing found. Try &ldquo;creatine&rdquo; or &ldquo;tee&rdquo;.</p>
+    </div>
+  </div>
+  <script src="/assets/search.js" defer></script>
 </header>
