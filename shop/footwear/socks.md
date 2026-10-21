@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Socks
 permalink: /shop/footwear/socks/
+kicker_num: 02
+kicker: Footwear
+intro: The most underrated piece of kit. Thick underfoot, warm when wet.
+sample_note: true
+categories: [socks]
 ---
-
-Training socks.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>

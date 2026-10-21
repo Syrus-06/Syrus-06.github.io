@@ -1,0 +1,55 @@
+---
+---
+<div class="x-root x-shop-page">
+  <section class="x-shop-hero">
+    <div class="x-container">
+      <p class="x-eyebrow"><b>{{ page.kicker_num }}</b> / {{ page.kicker }}</p>
+      <h1 class="x-display">{{ page.title }}</h1>
+      <p class="x-shop-sub">{{ page.intro }}</p>
+    </div>
+  </section>
+  <section class="x-section x-shop-listing">
+    <div class="x-container">
+      {% assign items = "" | split: "" %}
+      {% for key in page.categories %}
+        {% assign group = site.data.wah_products[key] %}
+        {% if group %}
+          {% assign items = items | concat: group %}
+        {% endif %}
+      {% endfor %}
+      <div class="x-grid">
+        {% for p in items %}
+        <article class="x-card x-pcard">
+          <a class="x-card-media" href="{{ p.url }}" rel="nofollow sponsored" aria-label="{{ p.name }}">
+            <span class="x-card-tag">{{ p.stock }}</span>
+            {% include shop-icon.html icon=p.icon %}
+            {% assign n = forloop.index %}
+            {% if n < 10 %}{% assign n = "0" | append: n %}{% endif %}
+            <span class="x-card-num">{{ n }}</span>
+          </a>
+          <div class="x-card-body">
+            <h3 class="x-card-name">{{ p.name }}</h3>
+            <p class="x-card-desc">{{ p.desc }}</p>
+            <div class="x-card-foot">
+              <span class="x-price">{{ p.price }}</span>
+              <a class="x-view" href="{{ p.url }}" rel="nofollow sponsored">Buy &rarr;</a>
+            </div>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+
+      <div class="x-perks">
+        <div class="x-perk">Free shipping over $75</div>
+        <div class="x-perk">30-day easy returns</div>
+        <div class="x-perk">100% secure checkout</div>
+      </div>
+
+      {% if page.sample_note %}
+      <div class="x-shop-note-row">
+        <p>SAMPLE LISTING &mdash; names, prices and links are placeholders until real products are connected.</p>
+      </div>
+      {% endif %}
+    </div>
+  </section>
+</div>

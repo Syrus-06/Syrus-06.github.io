@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Bottles
 permalink: /shop/gym-essentials/bottles/
+kicker_num: 03
+kicker: Gym Essentials
+intro: Hydration on schedule. Steel that survives the gym floor.
+sample_note: true
+categories: [bottles]
 ---
-
-Water bottles.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>
