@@ -6,25 +6,25 @@
 tees:
   - name: Arc Heavyweight Tee
     desc: 240gsm carded cotton, boxy cut. The everyday armor for cold-weather training.
-    price: "$32"
+    price: $32
     stock: In stock
     icon: tee
     url: https://example.com/affiliate/arc-heavyweight-tee
   - name: Frost Long Sleeve
     desc: Brushed interior, cuffs that stay put. For the mornings the gym door is frozen.
-    price: "$44"
+    price: $44
     stock: In stock
     icon: longsleeve
     url: https://example.com/affiliate/frost-long-sleeve
   - name: Iron Hoodie
     desc: Heavy fleece, no logo noise. Built to be worn until it is yours.
-    price: "$68"
+    price: $68
     stock: Low stock
     icon: hoodie
     url: https://example.com/affiliate/iron-hoodie
   - name: Drainage Tank
     desc: Mesh-back training tank for the indoor grinds. Zero cling, full range.
-    price: "$28"
+    price: $28
     stock: In stock
     icon: tank
     url: https://example.com/affiliate/drainage-tank
@@ -32,19 +32,19 @@ tees:
 compression:
   - name: Arc Compression Top
     desc: Locked-in fit that moves with every rep. Warm without weight.
-    price: "$38"
+    price: $38
     stock: In stock
     icon: longsleeve
     url: https://example.com/affiliate/arc-compression-top
   - name: Base Layer Tights
     desc: Thermal base layer for outdoor runs when the air bites.
-    price: "$42"
+    price: $42
     stock: In stock
     icon: pants
     url: https://example.com/affiliate/base-layer-tights
   - name: Compression Shorts
     desc: Under-shorts that stay put through squats, sprints and sled work.
-    price: "$30"
+    price: $30
     stock: In stock
     icon: shorts
     url: https://example.com/affiliate/compression-shorts
@@ -52,13 +52,13 @@ compression:
 trackpants:
   - name: Arc Trackpants
     desc: Straight-leg, heavyweight weave. From the barbell to the street without a change.
-    price: "$54"
+    price: $54
     stock: In stock
     icon: pants
     url: https://example.com/affiliate/arc-trackpants
   - name: Frost Fleece Joggers
     desc: Brushed fleece interior with tapered ankles. Built for cold walks and warm-ups.
-    price: "$48"
+    price: $48
     stock: Low stock
     icon: pants
     url: https://example.com/affiliate/frost-fleece-joggers
@@ -66,13 +66,13 @@ trackpants:
 shorts:
   - name: Arc Training Shorts
     desc: Mid-length, side splits, zero ride-up. The default choice on any training day.
-    price: "$34"
+    price: $34
     stock: In stock
     icon: shorts
     url: https://example.com/affiliate/arc-training-shorts
   - name: 2-in-1 Training Shorts
     desc: Outer shell with a compression liner. Phone pocket that actually holds.
-    price: "$40"
+    price: $40
     stock: In stock
     icon: shorts
     url: https://example.com/affiliate/2-in-1-training-shorts
@@ -80,13 +80,13 @@ shorts:
 shoes:
   - name: Arc Court Trainer
     desc: Low-profile trainer with winter-grade grip. Built for cold pavement and early starts.
-    price: "$96"
+    price: $96
     stock: In stock
     icon: shoe
     url: https://example.com/affiliate/arc-court-trainer
   - name: All-Weather Trail Runner
     desc: Grippy outsole and a water-shedding upper. Rain is not a rest day.
-    price: "$110"
+    price: $110
     stock: In stock
     icon: shoe
     url: https://example.com/affiliate/all-weather-trail-runner
@@ -94,13 +94,13 @@ shoes:
 socks:
   - name: Arc Crew Socks (3-pack)
     desc: Mid-calf, reinforced heel, thick terry underfoot. One for each training day.
-    price: "$18"
+    price: $18
     stock: In stock
     icon: sock
     url: https://example.com/affiliate/arc-crew-socks
   - name: Wool Winter Hikers
     desc: Merino blend that keeps warmth when wet. For the outdoor miles.
-    price: "$24"
+    price: $24
     stock: Low stock
     icon: sock
     url: https://example.com/affiliate/wool-winter-hikers
@@ -108,13 +108,13 @@ socks:
 bands:
   - name: Resistance Band Set
     desc: Five tensions, one carry pouch. A full gym that fits in a drawer.
-    price: "$28"
+    price: $28
     stock: In stock
     icon: band
     url: https://example.com/affiliate/resistance-band-set
   - name: Pull-up Progression Band
     desc: One heavy band for assisted pull-ups and joint-friendly warm-ups.
-    price: "$22"
+    price: $22
     stock: In stock
     icon: band
     url: https://example.com/affiliate/pull-up-progression-band
@@ -122,13 +122,13 @@ bands:
 grippers:
   - name: Arc Grip Gripper
     desc: Adjustable spring gripper, 20–90kg. Grip fails before the back does. Fix that.
-    price: "$20"
+    price: $20
     stock: In stock
     icon: gripper
     url: https://example.com/affiliate/arc-grip-gripper
   - name: Hand Exerciser Pro
     desc: Smooth resistance dial for high-volume grip work and recovery days.
-    price: "$16"
+    price: $16
     stock: In stock
     icon: gripper
     url: https://example.com/affiliate/hand-exerciser-pro
@@ -136,13 +136,13 @@ grippers:
 bottles:
   - name: Arc Insulated Bottle
     desc: 1L stainless, keeps cold for a full session. Steel that survives the gym floor.
-    price: "$26"
+    price: $26
     stock: In stock
     icon: bottle
     url: https://example.com/affiliate/arc-insulated-bottle
   - name: Shaker 700
     desc: Leak-sealed shaker with a mesh core. Protein on schedule, no clumps.
-    price: "$18"
+    price: $18
     stock: In stock
     icon: bottle
     url: https://example.com/affiliate/shaker-700
@@ -150,19 +150,19 @@ bottles:
 gym_essentials_more:
   - name: Lifting Straps
     desc: Padded cotton straps for pulls that outlast your grip.
-    price: "$15"
+    price: $15
     stock: In stock
     icon: straps
     url: https://example.com/affiliate/lifting-straps
   - name: Arc Gym Bag
     desc: 30L duffel with a shoe tunnel and a wet pocket. Carries the whole routine.
-    price: "$58"
+    price: $58
     stock: In stock
     icon: bag
     url: https://example.com/affiliate/arc-gym-bag
   - name: Lifting Belt
     desc: 10mm leather core, single prong. For the sets that matter.
-    price: "$62"
+    price: $62
     stock: In stock
     icon: straps
     url: https://example.com/affiliate/lifting-belt
@@ -170,7 +170,7 @@ gym_essentials_more:
 creatine:
   - name: Creatine Monohydrate 500g
     desc: Micronized, unflavored, third-party tested. The most proven supplement there is.
-    price: "$25"
+    price: $25
     stock: In stock
     icon: jar
     url: https://example.com/affiliate/creatine-monohydrate-500g
@@ -178,13 +178,13 @@ creatine:
 protein:
   - name: Whey Isolate 2lb
     desc: 27g protein per scoop, low lactose. Mixes clean in water or milk.
-    price: "$48"
+    price: $48
     stock: In stock
     icon: jar
     url: https://example.com/affiliate/whey-isolate-2lb
   - name: Casein Night Protein
     desc: Slow-digesting protein for the overnight repair window. Take it before bed.
-    price: "$44"
+    price: $44
     stock: In stock
     icon: jar
     url: https://example.com/affiliate/casein-night-protein
@@ -192,7 +192,7 @@ protein:
 pre_workout:
   - name: Arc Pre-Workout 30srv
     desc: Clean caffeine plus citrulline and beta-alanine. Focus without the crash.
-    price: "$34"
+    price: $34
     stock: In stock
     icon: jar
     url: https://example.com/affiliate/arc-pre-workout
@@ -200,19 +200,19 @@ pre_workout:
 supplements_more:
   - name: Magnesium Glycinate
     desc: Deep-sleep support in an absorbable form. The recovery mineral.
-    price: "$15"
+    price: $15
     stock: In stock
     icon: capsule
     url: https://example.com/affiliate/magnesium-glycinate
   - name: Omega-3 Fish Oil
     desc: High-EPA triglyceride oil for joints and heart. No fishy aftertaste.
-    price: "$18"
+    price: $18
     stock: In stock
     icon: capsule
     url: https://example.com/affiliate/omega-3-fish-oil
   - name: Vitamin D3+K2
     desc: Winter-day sunlight in a capsule. Bones, mood, hormones.
-    price: "$12"
+    price: $12
     stock: In stock
     icon: capsule
     url: https://example.com/affiliate/vitamin-d3-k2
