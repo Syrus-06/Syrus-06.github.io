@@ -550,3 +550,35 @@ a:hover {
   .x-stat:first-child{border-top:0}
   .x-sec-head{flex-direction:column;align-items:flex-start;gap:14px}
 }
+
+/* ==========================================================================
+   Header search (the ONLY header addition, per Aryan's request).
+   Scoped to .wah-search-* so nothing else in the header/bar changes.
+   ========================================================================== */
+.wah-search-btn{display:flex;align-items:center;justify-content:center;flex-shrink:0;width:44px;height:44px;margin-left:auto;cursor:pointer;border:1px solid transparent;background:transparent;color:var(--wah-white);transition:border-color 220ms var(--wah-ease),background 220ms var(--wah-ease)}
+.wah-search-btn:hover,.wah-search-btn:focus-visible{border-color:var(--wah-line);background:#141414;outline:none}
+.wah-search-btn svg{width:18px;height:18px}
+.wah-pages{margin-left:auto}
+.wah-search-btn{margin-left:0}
+.wah-search-overlay{position:fixed;inset:0;z-index:130;background:rgba(0,0,0,.9);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);opacity:0;transition:opacity 220ms var(--wah-ease)}
+.wah-search-overlay.is-open{opacity:1}
+.wah-search-panel{max-width:640px;margin:0 auto;padding:clamp(88px,18vh,180px) 20px 0}
+.wah-search-row{display:flex;align-items:center;gap:14px;border-bottom:1px solid var(--wah-line);padding-bottom:14px}
+.wah-search-glyph{width:22px;height:22px;flex:none;color:var(--wah-muted)}
+.wah-search-input{flex:1;min-width:0;background:transparent;border:0;outline:none;color:var(--wah-white);font-family:"Oswald","Arial Narrow",sans-serif;font-size:clamp(1.3rem,4.5vw,2rem);letter-spacing:.08em;text-transform:uppercase}
+.wah-search-input::placeholder{color:#5a5a5a}
+.wah-search-input::-webkit-search-cancel-button{display:none}
+.wah-search-close{display:flex;align-items:center;justify-content:center;flex:none;width:40px;height:40px;cursor:pointer;border:1px solid var(--wah-line);background:transparent;color:var(--wah-white);font-size:1.5rem;line-height:1;transition:background 200ms var(--wah-ease)}
+.wah-search-close:hover,.wah-search-close:focus-visible{background:#1a1a1a;outline:none}
+.wah-search-kicker{margin:18px 0 0;font-family:"Inter",sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:var(--wah-muted)}
+.wah-search-results{margin:10px 0 0;padding:0;list-style:none}
+.wah-search-hit{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:14px 4px;border-bottom:1px solid #1f1f1f;color:var(--wah-white) !important;text-decoration:none !important;transition:background 180ms var(--wah-ease),padding-left 180ms var(--wah-ease)}
+.wah-search-hit:hover,.wah-search-hit:focus-visible{background:#141414;padding-left:12px;outline:none}
+.wah-search-hit-name{font-family:"Inter",sans-serif;font-size:.95rem;font-weight:500;letter-spacing:.02em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.wah-search-hit-cat{flex:none;font-family:"Inter",sans-serif;font-size:.58rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:var(--wah-muted)}
+.wah-search-empty{margin:18px 0 0;color:var(--wah-muted);font-size:.9rem}
+@media screen and (max-width:430px){
+  .wah-search-btn{width:40px;height:40px}
+  .wah-search-btn svg{width:16px;height:16px}
+  .wah-search-panel{padding-top:64px}
+}
