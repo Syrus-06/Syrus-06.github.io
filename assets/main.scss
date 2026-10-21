@@ -435,3 +435,8 @@ a:hover {
 .x-shop-listing{padding-top:clamp(40px,6vw,72px)}
 .x-pcard .x-card-media svg{width:42%}
 .x-shop-note-row{margin-top:22px;padding:14px 16px;border:1px dashed #b3b3b3;font-size:.7rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:#8a8a8a}
+.x-shop-hero .x-eyebrow b{color:#fff !important}
+.x-filler{background:#fafafa;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center;min-height:300px}
+.x-filler-dash{width:34px;height:1px;background:#0a0a0a}
+.x-filler-txt{font-size:.62rem;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#8a8a8a}
+@media (max-width:1079px){.x-filler{display:none}}

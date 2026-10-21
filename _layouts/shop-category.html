@@ -38,6 +38,16 @@ layout: default
           </div>
         </article>
         {% endfor %}
+        {% assign mod4 = items.size | modulo: 4 %}
+        {% if mod4 != 0 %}
+          {% assign fillers = 4 | minus: mod4 %}
+          {% for i in (1..fillers) %}
+          <div class="x-filler" aria-hidden="true">
+            <span class="x-filler-dash"></span>
+            <span class="x-filler-txt">More drops soon</span>
+          </div>
+          {% endfor %}
+        {% endif %}
       </div>
 
       <div class="x-perks">
