@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Footwear
 permalink: /shop/footwear/
+kicker_num: ALL
+kicker: Footwear
+intro: Shoes and socks built for cold starts and long miles.
+sample_note: true
+categories: [shoes, socks]
 ---
-
-Shoes and socks built for training.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>

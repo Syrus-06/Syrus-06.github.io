@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Compression
 permalink: /shop/apparel/compression/
+kicker_num: 02
+kicker: Apparel
+intro: Locked-in base layers for cold sessions and outdoor miles. Warm without weight.
+sample_note: true
+categories: [compression]
 ---
-
-Compression layers that stay out of the way.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>

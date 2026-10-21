@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Shoes
 permalink: /shop/footwear/shoes/
+kicker_num: 01
+kicker: Footwear
+intro: Grip for cold pavement and early starts. Trainers built for the season.
+sample_note: true
+categories: [shoes]
 ---
-
-Training shoes.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>

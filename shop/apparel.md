@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Apparel
 permalink: /shop/apparel/
+kicker_num: ALL
+kicker: Apparel
+intro: Everything for the cold-season uniform: tees, compression, trackpants, shorts.
+sample_note: true
+categories: [tees, compression, trackpants, shorts]
 ---
-
-Tees, compression, trackpants, shorts.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>
