@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Shorts
 permalink: /shop/apparel/shorts/
+kicker_num: 04
+kicker: Apparel
+intro: For the indoor grinds and the warm-up that precedes them.
+sample_note: true
+categories: [shorts]
 ---
-
-Shorts for sessions that run hot.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>

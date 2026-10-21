@@ -1,9 +1,10 @@
 ---
-layout: page
+layout: shop-category
 title: Trackpants
 permalink: /shop/apparel/trackpants/
+kicker_num: 03
+kicker: Apparel
+intro: Heavy weaves and clean lines. Barbell to street without a change.
+sample_note: true
+categories: [trackpants]
 ---
-
-Trackpants for training and recovery days.
-
-<p class="shop-note">Listings coming. This page is live so the header menu has a real destination.</p>
