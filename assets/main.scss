@@ -436,6 +436,17 @@ a:hover {
   max-width: none;
   padding: 0;
 }
+/* minima gives <body> no "home" class, so the selectors above never match on
+   the built site and the homepage stays trapped in the 740px .wrapper column.
+   :has() scopes the same neutralization to the homepage only (the page whose
+   content contains .x-root), leaving every other page's wrapper untouched. */
+.page-content:has(.x-root) {
+  padding: 0;
+}
+.page-content:has(.x-root) .wrapper {
+  max-width: none;
+  padding: 0;
+}
 
 /* ==========================================================================
    WINTER ARC HUB - homepage body (design system "x")
